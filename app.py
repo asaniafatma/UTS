@@ -14,7 +14,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	filename = "https://raw.githubusercontent.com/mabidnadzif/analisis_santimen/main/review_tanpa_preprocessing.csv"
+	filename = "https://raw.githubusercontent.com/asaniafatma/UTS/main/hasil_review.csv"
 	df = pd.read_csv(filename)
 	df.drop(columns=['rumah sakit semarang', 'name'], inplace=True)
 
